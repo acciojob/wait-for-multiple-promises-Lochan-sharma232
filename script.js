@@ -1,5 +1,5 @@
 //your JS code here. If required.
-const table=document.querySelector("#output tbody");
+const table=document.querySelector("output tbody");
 table.innerHTML="";
 
 const promise1=()=>{
