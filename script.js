@@ -13,13 +13,13 @@ const promise2=()=>{
 	return new Promise((resolve,reject)=>{
 		setTimeOut(()=>{
 			resolve("promise1");
-	},2000);
+	},1000);
 })
 }
 const promise3=()=>{
 	return new Promise((resolve,reject)=>{
 		setTimeOut(()=>{
 			resolve("promise1");
-	},2000);
+	},1500);
 })
 }
