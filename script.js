@@ -2,24 +2,27 @@
 const table=document.querySelector("#output tbody");
 // table.innerHTML="";
 
-const promise1=()=>{
+const Promise 1=()=>{
 	return new Promise((resolve,reject)=>{
 		setTimeOut(()=>{
 			resolve("promise1");
 	},2000);
 })
 }
-const promise2=()=>{
+const Promise 2=()=>{
 	return new Promise((resolve,reject)=>{
 		setTimeOut(()=>{
-			resolve("promise1");
+			resolve("promise2");
 	},1000);
 })
 }
-const promise3=()=>{
+const Promise 3=()=>{
 	return new Promise((resolve,reject)=>{
 		setTimeOut(()=>{
-			resolve("promise1");
+			resolve("promise3");
 	},1500);
 })
 }
+Promise.all[(promise1(),promise2(),promise3())].then((data)=>{
+	console.log(data)
+})
