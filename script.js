@@ -9,3 +9,17 @@ const promise1=()=>{
 	},2000);
 })
 }
+const promise2=()=>{
+	return new Promise((resolve,reject)=>{
+		setTimeOut(()=>{
+			resolve("promise1");
+	},2000);
+})
+}
+const promise3=()=>{
+	return new Promise((resolve,reject)=>{
+		setTimeOut(()=>{
+			resolve("promise1");
+	},2000);
+})
+}
