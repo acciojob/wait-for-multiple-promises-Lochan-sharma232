@@ -5,8 +5,7 @@ table.innerHTML="";
 const promise1=()=>{
 	return new Promise1=((resolve,reject)=>{
 		setTimeOut(()=>{
-			resolve("promise1")
-		}
+			resolve("promise1");
 	},2000);
 })
 }
