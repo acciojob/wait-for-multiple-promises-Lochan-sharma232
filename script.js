@@ -1,6 +1,6 @@
 //your JS code here. If required.
 const table=document.querySelector("#output tbody");
-table.innerHTML="";
+// table.innerHTML="";
 
 const promise1=()=>{
 	return new Promise((resolve,reject)=>{
