@@ -1,4 +1,4 @@
-const table=document.querySelector("#output tbody");
+const table=document.getElementById("output");
 // table.innerHTML="";
 
 const Promise1=()=>{
