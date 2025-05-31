@@ -1,5 +1,4 @@
-
-const data=performance.now();
+const startTime=performance.now();
 const table=document.getElementById("output");
 
 const Promise1=()=>{
@@ -24,7 +23,7 @@ const Promise3=()=>{
 })
 }
 
-Promise.all([promise1(),promise2(),promise3()]).then((results)=>{
+Promise.all([Promise1(),Promise2(),Promise3()]).then((results)=>{
  
     const endTime=performance.now()
     const totalTime=((endTime-startTime)/1000).toFixed(3)
