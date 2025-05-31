@@ -1,4 +1,3 @@
-const table=document.getElementById("output");
 // table.innerHTML="";
 
 const Promise1=()=>{
@@ -22,6 +21,9 @@ const Promise3=()=>{
 	},1500);
 })
 }
-Promise.all([Promise1(),Promise2(),Promise3()]).then((data)=>{
+const table=document.getElementById("output");
+
+Promise.all([Promise1(),Promise2(),Promise3()]output.remove();)
+	.then((data)=>{
 	console.log(data)
 })
