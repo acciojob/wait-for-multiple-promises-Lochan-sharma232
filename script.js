@@ -23,7 +23,6 @@ const Promise3=()=>{
 })
 }
 
-Promise.all([Promise1(),Promise2(),Promise3()]);
-	.then((data)=>{
+Promise.all([Promise1(),Promise2(),Promise3()]).then((data)=>{
 	console.log(data)
 })
