@@ -1,29 +1,33 @@
-const startTime=performance.now();
-const table=document.getElementById("output");
-
-const Promise1=()=>{
-	return new Promise((resolve,reject)=>{
-		setTimeout(()=>{
-			resolve("promise1");
-	},1000);
-})
+const startTime=performance.now()
+ 
+const promise1 = () => {
+    const delay=1000
+    return new Promise((resolve) => {
+        setTimeout(() => {
+            resolve({label:"promise 1", time:delay/1000});
+        }, delay)
+    });
+};
+ 
+const promise2 = () => {
+    const delay=2000
+    return new Promise((resolve) => {
+        setTimeout(() => {
+            resolve({label:"promise 2", time:delay/1000})
+        }, delay)
+    })
 }
-const Promise2=()=>{
-	return new Promise((resolve,reject)=>{
-		setTimeout(()=>{
-			resolve("promise2");
-	},2000);
-})
+ 
+const promise3 = () => {
+    const delay=2000
+    return new Promise((resolve) => {
+        setTimeout(() => {
+            resolve({label:"promise 3", time:delay/1000})
+        }, delay)
+    })
 }
-const Promise3=()=>{
-	return new Promise((resolve,reject)=>{
-		setTimeout(()=>{
-			resolve("promise3");
-	},2000);
-})
-}
-
-Promise.all([Promise1(),Promise2(),Promise3()]).then((results)=>{
+ 
+Promise.all([promise1(),promise2(),promise3()]).then((results)=>{
  
     const endTime=performance.now()
     const totalTime=((endTime-startTime)/1000).toFixed(3)
@@ -54,5 +58,4 @@ Promise.all([Promise1(),Promise2(),Promise3()]).then((results)=>{
    tbody.appendChild(totalRow)
  
 })
- 
  
